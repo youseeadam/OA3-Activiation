@@ -9,4 +9,4 @@ Run from elevated PowerShell
 <code>Get-WmiObject -Class softwarelicensingservice -Property OA3xOriginalProductKey</code>
 
 If that returns a value you are set. After you install Windows run the following command
-<code>Get-WmiObject -Class softwarelicensingservice -Property OA3xOriginalProductKey | foreach-object {cscript.exe slmgr.vbs /ipk $_.OA3xOriginalProductKey</code> and you will be running the correct version of Windowa. 
+<code>Get-WmiObject -Class softwarelicensingservice -Property OA3xOriginalProductKey | foreach-object {cscript.exe slmgr.vbs /ipk $_.OA3xOriginalProductKey}</code> and you will be running the correct version of Windowa. 
